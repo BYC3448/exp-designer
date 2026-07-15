@@ -4,6 +4,34 @@
     {
       "src": "server.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "css/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "experiment/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "shared/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "template/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "video/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "main.js",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -12,36 +40,8 @@
       "dest": "server.js"
     },
     {
-      "src": "/css/(.*)",
-      "dest": "/css/$1"
-    },
-    {
-      "src": "/experiment/(.*)",
-      "dest": "/experiment/$1"
-    },
-    {
-      "src": "/shared/(.*)",
-      "dest": "/shared/$1"
-    },
-    {
-      "src": "/template/(.*)",
-      "dest": "/template/$1"
-    },
-    {
-      "src": "/video/(.*)",
-      "dest": "/video/$1"
-    },
-    {
-      "src": "/main.js",
-      "dest": "/main.js"
-    },
-    {
-      "src": "/index.html",
-      "dest": "/index.html"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/$1"
     }
   ],
   "env": {
