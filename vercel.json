@@ -12,8 +12,24 @@
       "dest": "server.js"
     },
     {
-      "src": "/(css|experiment|shared|template|video)/(.*)",
-      "dest": "/$1/$2"
+      "src": "/css/(.*)",
+      "dest": "/css/$1"
+    },
+    {
+      "src": "/experiment/(.*)",
+      "dest": "/experiment/$1"
+    },
+    {
+      "src": "/shared/(.*)",
+      "dest": "/shared/$1"
+    },
+    {
+      "src": "/template/(.*)",
+      "dest": "/template/$1"
+    },
+    {
+      "src": "/video/(.*)",
+      "dest": "/video/$1"
     },
     {
       "src": "/main.js",
